@@ -1,0 +1,25 @@
+Comandos git.
+
+1.- Inicializar un repositorio (desde la carpeta , working directory)git init, se crea una carpeta .git(oculta)
+2.- Revisar los archivos que tenemos/trabajando git status
+3.- Agregar/actualizar los archivos que se necesitan al staging area git add <file>
+4.- el comando git restore <file> es para descartar los cambios en el WD.
+5.- Para crear un shapshot del codigo es con git commit, es necesario identificarse para saber quien realizò el
+cambio.Se crea un id de cada archivo
+git config --global user.email "galr960420@gmail.com"
+git config --global user.name "Godfatherini"
+
+6.-Con git log podemos diferenciar cada snapshot con un hash con el registro del commit.
+7.-git checkout -- <filename> es para revertir los cambios.
+8.- git diff , para saber las diferencia entre los cambios de un archivo
+9.- Para poder ignorar archivos, se tiene que crear un archivo .ignore en el WD y agregar con git add .gitignore
+10.- git branch <branch_name> , para tener una version alternativa del proyecto , git branch para saber en què branchy n
+	nos encontramos "*", git checkout <branch_name> , para cambiar de branch.
+11.- Para subir el WD en git HUB es necesario crear una cuenta y ejecutar el sig comando:
+
+	git remote add origin https://github.com/GaboAlejo/git_curso.git
+	git push -u origin master
+
+12.- Para clonar un repo es necesario copiar la url del proyecto y usar el sig comando
+
+git clone <url>
